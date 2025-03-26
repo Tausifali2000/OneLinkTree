@@ -1,0 +1,42 @@
+.container {
+  width: 230px;
+  border: 1px solid white;
+  border-radius: 20px;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.top {
+  width: 200px;
+  height: 100%;
+}
+
+.top img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid white; /* Right-facing arrow */
+  margin: 10px auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.container:hover .arrow {
+  transform: translateX(5px);
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}

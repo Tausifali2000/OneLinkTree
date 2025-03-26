@@ -1,0 +1,71 @@
+.body {
+  width: 100%;
+ 
+}
+
+.top {
+
+  width: auto;  /* Let it grow */
+  
+  height: 500px;
+  display: flex;
+}
+ /* .categories {
+ 
+  
+
+
+ 
+}  */
+
+.categories h1{ 
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.cateCards {
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  
+  padding: 20px 0px;
+  cursor: pointer;
+ 
+ 
+  color: white;
+ 
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.link > div:hover { 
+  opacity: 0.8; /* Only applies hover effect to the specific card */
+}
+
+/* .essentials {
+  border: 1px solid white;
+} */
+
+
+
+.essentials h2{ 
+
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  padding: 20px 10px;
+  
+  
+}
+

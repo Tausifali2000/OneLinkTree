@@ -1,0 +1,60 @@
+.top {
+  display: flex;
+  width: 100%;
+}
+
+.left {
+  width: 59%;
+  padding: 1%;
+
+}
+
+.left h1{ 
+  
+  font-weight: 400;
+  font-size: 30px;
+ 
+}
+
+
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+
+.sites {
+  display: grid;
+  grid-template-columns: repeat(2, 300px); /* 2 equal columns */
+  gap: 30px; /* Space between grid items */
+  cursor: pointer;
+  padding: 20px;
+  color: white;
+  
+}
+
+
+.right {
+
+  width: 45%;
+
+
+
+}
+
+.right h2{ 
+ 
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  padding: 20px 10px;
+  
+  
+}

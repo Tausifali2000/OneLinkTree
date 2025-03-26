@@ -1,0 +1,81 @@
+.body {
+  width: 100%;
+ 
+}
+
+.top {
+  min-width: 750px;
+  width: auto;  /* Let it grow */
+  max-width: 100%; /* Prevent overflow */
+  height: 500px;
+  display: flex;
+  
+}
+.left {
+  width: 55%;
+  
+
+
+ 
+}
+
+.left h1{ 
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.sites{
+  display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 20px 0px;
+  cursor: pointer;
+ 
+  color: white;
+ 
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.sites > div:hover { 
+  background-color: gray; 
+}
+
+.right {
+
+  width: 45%;
+
+
+
+}
+
+.right h2{ 
+ 
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  padding: 20px 10px;
+  
+  
+}
+
+.bottom {
+  display: flex;
+}
+
+.getStarted {
+
+  width: 100%;
+}

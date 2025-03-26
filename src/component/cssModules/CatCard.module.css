@@ -1,0 +1,23 @@
+.container {
+  background: url("/game.avif");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  display: flex;
+  justify-content: flex-start;
+  width: 350px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  height: 80px;
+  border-radius: 20px 50px 50px 20px;
+  
+ 
+}
+
+.container p {
+  font-size: 2rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+
+}
+
