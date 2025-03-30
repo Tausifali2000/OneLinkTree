@@ -4,6 +4,7 @@
   background-position: center; 
   background-repeat: no-repeat; 
   display: flex;
+  
   justify-content: flex-start;
   width: 350px;
   margin-right: 20px;
@@ -21,3 +22,18 @@
 
 }
 
+
+@media screen and (max-width: 1430px) {  
+  .container {
+    width: 300px;
+
+  }
+
+  
+.container p {
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+
+}
+}

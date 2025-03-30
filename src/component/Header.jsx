@@ -1,22 +1,33 @@
 import { Link } from "react-router-dom";
-import styles from "./cssModules/Header.module.css";
 
 const Header = () => {
   return (
-    <div className={styles.header}>
+    <div className="flex items-center justify-between w-full h-20 rounded-full border border-white px-6">
       
-      <div className={styles.ctitle}>
-        <div className={styles.logo}></div>
-        <Link className={styles.link} to="/">    <div className={styles.title}><h1>OneLink</h1></div></Link>
-    
+      {/* Logo & Title */}
+      <div>
+        <Link to="/" className="flex items-center gap-2 text-white no-underline">
+          <h1 className="text-2xl font-light ml-6">OneLink</h1>
+          <div className="h-10 w-10">
+            <img src="/whiteTree.svg" alt="logo" className="w-full h-full object-cover" />
+          </div>
+        </Link>
       </div>
 
-      <div className={styles.navBar}>
-        <Link to="/"><button className={styles.home}>Home</button></Link>
-        <button className={styles.categories}>Categories</button>
+      {/* Navigation */}
+      <div className="flex items-center gap-4 mr-6">
+        <Link to="/">
+          <button className="flex items-center justify-center cursor-pointer bg-[#5790AB] text-white px-5 py-2 rounded-full">
+            Home
+          </button>
+        </Link>
+        {/* <button className="flex items-center justify-center cursor-pointer bg-[#5790AB] text-white px-5 py-2 rounded-full">
+          Categories
+        </button> */}
       </div>
+      
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

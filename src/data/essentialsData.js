@@ -59,17 +59,8 @@ export const essentialData = {
         name: "Instagram", 
         icon: "/essentials/instagram.svg", 
         downloadUrl: "https://apps.microsoft.com/detail/9nblggh5l9xt?hl=en-US&gl=US" 
-      },
-      { 
-        name: "Discord", 
-        icon: "/essentials/discord.svg", 
-        downloadUrl: "https://discord.com/download" 
-      },
-      { 
-        name: "Telegram", 
-        icon: "/essentials/telegram.svg", 
-        downloadUrl: "https://desktop.telegram.org/" 
       }
+      
     ]
   }
 };
