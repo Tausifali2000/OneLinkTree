@@ -1,0 +1,57 @@
+"use client";
+import React from "react";
+import Image from "next/image";
+import { IItemCardv1 } from "./interface/itemCardv1.interface";
+
+export interface ItemCardv2Props {
+  payload: IItemCardv1;
+  onClick?: () => void;
+}
+
+export const ItemCardv2: React.FC<ItemCardv2Props> = ({ payload, onClick }) => {
+  return (
+    
+      href={payload.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={onClick}
+      className="group focus:outline-none"
+    >
+      <div className="flex items-center gap-3 p-3 rounded-xl border border-gray-100 bg-white hover:border-gray-200 hover:shadow-sm transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0">
+        
+        {/* Icon */}
+        <div className="w-10 h-10 flex-shrink-0 rounded-lg bg-gray-50 border border-gray-100 flex items-center justify-center overflow-hidden">
+          <Image
+            src={payload.icon}
+            alt={payload.name}
+            width={28}
+            height={28}
+            className="object-contain"
+          />
+        </div>
+
+        {/* Text */}
+        <div className="flex flex-col min-w-0">
+          <span className="text-sm font-medium text-gray-800 truncate group-hover:text-gray-900 leading-tight">
+            {payload.name}
+          </span>
+          {payload.description && (
+            <span className="text-xs text-gray-400 truncate leading-tight mt-0.5">
+              {payload.description}
+            </span>
+          )}
+        </div>
+
+        {/* Arrow */}
+        <div className="ml-auto flex-shrink-0 text-gray-300 group-hover:text-gray-400 group-hover:translate-x-0.5 transition-transform duration-200">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M7 17L17 7M17 7H7M17 7V17" />
+          </svg>
+        </div>
+
+      </div>
+    </a>
+  );
+};
+
+export default ItemCardv2;
