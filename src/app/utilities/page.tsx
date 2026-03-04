@@ -11,6 +11,8 @@ import ItemCardv1 from "@/components/common/ItemCardv1";
 import { softwareSites } from "@/data/utils/utilis.data";
 import { PageHeader } from "@/components/common/PageHeader";
 
+export const runtime = "edge";
+
 type Props = {};
 const page = (props: Props) => {
   return (

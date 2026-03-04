@@ -11,6 +11,8 @@ import ItemCardv2 from "@/components/common/ItemCardv2";
 import { animeSites } from "@/data/anime/anime.data";
 import { PageHeader } from "@/components/common/PageHeader";
 
+export const runtime = "edge";
+
 type Props = {};
 const page = (props: Props) => {
   return (
