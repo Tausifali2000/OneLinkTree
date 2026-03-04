@@ -7,6 +7,8 @@ import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
+export const runtime = "edge";
+
 
 export const metadata: Metadata = {
   title: "OneLink",

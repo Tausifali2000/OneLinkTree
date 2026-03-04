@@ -10,6 +10,8 @@ import { GAMES } from "@oneLinkData";
 import ItemCardv1 from "@/components/common/ItemCardv1";
 import { PageHeader } from "@/components/common/PageHeader";
 
+export const runtime = "edge";
+
 type Props = {};
 const page = (props: Props) => {
   return (
